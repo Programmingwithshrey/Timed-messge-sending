@@ -11,5 +11,7 @@ messagee = input("Whats ur message:")
 while True:
     current_time = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     if current_time == target_dt:
+        pyautogui.typewrite(messagee)
+        pyautogui.press("enter")
         print("its time")
         break
